@@ -1,0 +1,82 @@
+/**
+ * Chronolabs Cooperative ~ Xortify Honeypot
+ *
+ * You may not change or alter any portion of this comment or credits
+ * of supporting developers from this source code or any supporting source code
+ * which is considered copyrighted (c) material of the original comment or credit authors.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * @copyright       Chronolabs Coopertive (Australia)  http://web.labs.coop
+ * @copyright       Xortify Honeypot  https://xortify.com
+ * @license         GNU GPL 2 (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+ * @package         xoops-theme
+ * @subpackage		extreme-super-closest
+ * @author         	Simon Antony Roberts (wishcraft/mynamesnot/cej) - open@extraterrestrialphysics.us
+ */
+ 
+@CHARSET "UTF-8";
+
+
+#right_column {
+	width: 232px !important;
+	float: right;
+	box-shadow: 6px 6px 3px #84e8a5;
+	border: 8px solid #87ae87;
+	border-radius: 18px;
+	padding: 0px;
+	display: inline-block;
+	margin-left: 13px;
+}
+
+
+#right_column tr
+{
+	margin-bottom: 10px !important;
+}
+
+#right_column h3
+{
+	margin-top: 13px !important;
+}
+
+#right_column a
+{
+	margin:0px;
+	pading:0px;
+}
+
+#right_column a:hover
+{
+	color: #000 !important;
+}
+
+#right_column div, #right_column a {
+	margin: 0px;
+	padding: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+#right_column li  {
+	list-style: none !important;
+	text-shadow: 2px 3px 2px #d00f88;
+	padding: 4px !important;
+	margin: 0px !important;
+	display: block;
+}
+
+#right_column li ul li{
+	list-style: none !important;
+	padding: 4px !important;
+	margin: 0px !important;
+	font-size: 68.97868%;
+	margin-left: 11px !important;
+	display: block;
+}
+
+
+#right_column ul il ul {
+	list-style: none !important;
+	margin-bottom: 11px !important;
+}

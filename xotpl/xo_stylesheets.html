@@ -1,0 +1,204 @@
+	<!-- Sheet Css -->
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/styles.css}>" />
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/nivo-slider.css}>" />
+    
+    <style>
+	<{php}>
+        foreach(array('html', '#left_column', '#right_column', '#footer2') as $cssele)
+        {
+	        mt_srand(mt_rand(-microtime(true), microtime(true)));
+	        mt_srand(mt_rand(-microtime(true), microtime(true)));
+	        mt_srand(mt_rand(-microtime(true), microtime(true)));
+	        
+	        $modes = array(	'one'=>array('a'=>'center, ellipse', 'b'=>'radial, center center'),
+	        		'two'=>array('a'=>'-45deg', 'b'=>'left top, right bottom'),
+	        		'three'=>array('a'=>'45deg', 'b'=>'left bottom, right top'),
+	        		'four'=>array('a'=>'top', 'b'=>'left top, left bottom'),
+	        		'five'=>array('a'=>'left', 'b'=>'left top, right top'));
+	        
+	        $modeskeys = array('one','two','three','four','five');
+	        
+	        $colour = array();
+	        foreach(array('one', 'two', 'three', 'four') as $key) {
+	        	$colour[$key]['red'] = mt_rand(33.0000001, 222);
+	        	$colour[$key]['green'] = mt_rand(11.000012, 210);
+	        	$colour[$key]['blue'] = mt_rand(24.1210123, 235);
+	        	if (in_array($key, array('one')))
+	        		$colour[$key]['heat'] = mt_rand(15.0121425154, 99);
+	        	else
+	        		$colour[$key]['heat'] = mt_rand(25.211412, 99);
+	        	$colour[$key]['opacity'] = (string)round(mt_rand(12.000121 ,91) / 92, 2);
+	        }
+	        shuffle($modeskeys);
+	        $state = $modes[$modeskeys[mt_rand(0, count($modekeys)-1)]];
+
+			echo  "\n\n\t$cssele\n\t" .  '{
+	        background: rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].');
+	        background: -moz-linear-gradient('.$state['a'].', rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%, rgba('.$colour['two']['red'].','.$colour['two']['green'].','.$colour['two']['blue'].','.$colour['two']['opacity'].') '.$colour['two']['heat'].'%, rgba('.$colour['three']['red'].','.$colour['three']['green'].','.$colour['three']['blue'].','.$colour['three']['opacity'].') '.$colour['three']['heat'].'%, rgba('.$colour['four']['red'].','.$colour['four']['green'].','.$colour['four']['blue'].','.$colour['four']['opacity'].') '.$colour['four']['heat'].'%, rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%);
+	        background: -webkit-gradient('.$state['b'].', color-stop('.$colour['one']['heat'].'%, rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].')), color-stop('.$colour['two']['heat'].'%, rgba('.$colour['two']['red'].','.$colour['two']['green'].','.$colour['two']['blue'].','.$colour['two']['opacity'].')), color-stop('.$colour['three']['heat'].'%, rgba('.$colour['three']['red'].','.$colour['three']['green'].','.$colour['three']['blue'].','.$colour['three']['opacity'].')), color-stop('.$colour['four']['heat'].'%, rgba('.$colour['four']['red'].','.$colour['four']['green'].','.$colour['four']['blue'].','.$colour['four']['opacity'].')), color-stop('.$colour['one']['heat'].'%, rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].')));
+	        background: -webkit-linear-gradient('.$state['a'].', rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%, rgba('.$colour['two']['red'].','.$colour['two']['green'].','.$colour['two']['blue'].','.$colour['two']['opacity'].') '.$colour['two']['heat'].'%, rgba('.$colour['three']['red'].','.$colour['three']['green'].','.$colour['three']['blue'].','.$colour['three']['opacity'].') '.$colour['three']['heat'].'%, rgba('.$colour['four']['red'].','.$colour['four']['green'].','.$colour['four']['blue'].','.$colour['four']['opacity'].') '.$colour['four']['heat'].'%, rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%);
+	        background: -o-linear-gradient('.$state['a'].', rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%, rgba('.$colour['two']['red'].','.$colour['two']['green'].','.$colour['two']['blue'].','.$colour['two']['opacity'].') '.$colour['two']['heat'].'%, rgba('.$colour['three']['red'].','.$colour['three']['green'].','.$colour['three']['blue'].','.$colour['three']['opacity'].') '.$colour['three']['heat'].'%, rgba('.$colour['four']['red'].','.$colour['four']['green'].','.$colour['four']['blue'].','.$colour['four']['opacity'].') '.$colour['four']['heat'].'%, rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%);
+	        background: -ms-linear-gradient('.$state['a'].', rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%, rgba('.$colour['two']['red'].','.$colour['two']['green'].','.$colour['two']['blue'].','.$colour['two']['opacity'].') '.$colour['two']['heat'].'%, rgba('.$colour['three']['red'].','.$colour['three']['green'].','.$colour['three']['blue'].','.$colour['three']['opacity'].') '.$colour['three']['heat'].'%, rgba('.$colour['four']['red'].','.$colour['four']['green'].','.$colour['four']['blue'].','.$colour['four']['opacity'].') '.$colour['four']['heat'].'%, rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%);
+	        background: linear-gradient('.$state['a'].', rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%, rgba('.$colour['two']['red'].','.$colour['two']['green'].','.$colour['two']['blue'].','.$colour['two']['opacity'].') '.$colour['two']['heat'].'%, rgba('.$colour['three']['red'].','.$colour['three']['green'].','.$colour['three']['blue'].','.$colour['three']['opacity'].') '.$colour['three']['heat'].'%, rgba('.$colour['four']['red'].','.$colour['four']['green'].','.$colour['four']['blue'].','.$colour['four']['opacity'].') '.$colour['four']['heat'].'%, rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%);
+	        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=\'#ffffff\', endColorstr=\'#ffffff\', GradientType=1 );
+	    }';
+		}
+	<{/php}>
+	</style>
+<{if $radioo}>
+	<link rel="stylesheet" href="<{$xoops_imageurl}>css/jplayer.css" type="text/css"  media="all"  />
+<{/if}>
+	
+<{if $show_mission}>
+	<style>
+		#blocker 
+		{
+		  	position:					absolute;
+		  	left:						0;
+		  	top:						0;
+		  	z-index:					99998;
+			background: 				rgba(11,22,11,0.89);
+		  	display:					none;
+    		min-height: 				101% !important;
+   	 		max-width: 					100% !important;
+    		width: 						100% !important;
+		  	clear:						none;
+		}  
+		
+		#mission 
+		{
+			z-index:					99999;
+		  	position:					absolute;
+		  	left:						0;
+		  	top:						0;
+		  	clear:						none;
+    		min-height: 				101% !important;
+   	 		max-width: 					100% !important;
+    		width: 						100% !important;
+		}
+		
+		#popupmission 
+		{
+		    	
+		    position:					absolute;
+			top: 						89px !important;
+			display:					none;
+			clear:						none;
+			margin-left:				auto;
+			margin-right:				auto;
+			width:						836px;
+			min-height:					256px;
+			-webkit-box-shadow: 		-4px 7px 18px rgba(254, 14, 11, 0.87);
+			-moz-box-shadow:    		-4px 7px 18px rgba(254, 14, 11, 0.87);
+			box-shadow:         		-4px 7px 18px rgba(254, 14, 11, 0.87);
+			-webkit-border-radius: 		15px;
+			-moz-border-radius: 		15px;
+			border-radius: 				15px;
+			<{php}>
+		        mt_srand(mt_rand(mt_rand(-microtime(true), microtime(true))));
+		        mt_srand(mt_rand(mt_rand(-microtime(true), microtime(true))));
+		        mt_srand(mt_rand(mt_rand(-microtime(true), microtime(true))));
+		        
+		        $modes = array(	'one'=>array('a'=>'center, ellipse', 'b'=>'radial, center center'),
+		        				'two'=>array('a'=>'-45deg', 'b'=>'left top, right bottom'),
+		        				'three'=>array('a'=>'45deg', 'b'=>'left bottom, right top'),
+		        				'four'=>array('a'=>'top', 'b'=>'left top, left bottom'),
+		        				'five'=>array('a'=>'left', 'b'=>'left top, right top'));
+		        
+		        $modeskeys = array('one','two','three','four','five');
+		        
+		        $colour = array();
+		        foreach(array('one', 'two', 'three', 'four') as $key) {
+					$colour[$key]['red'] = mt_rand(77, 222);
+					$colour[$key]['green'] = mt_rand(88, 177);
+					$colour[$key]['blue'] = mt_rand(111, 243);
+					if (in_array($key, array('one')))
+						$colour[$key]['heat'] = mt_rand(47, 99);
+					else
+						$colour[$key]['heat'] = mt_rand(37, 99);
+					$colour[$key]['opacity'] = (string)round(mt_rand(36, 83) / 93, 2);
+		        }
+		        shuffle($modeskeys);
+		        $state = $modes[$modeskeys[mt_rand(0, count($modekeys)-1)]];
+		        echo '
+			background:					rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].');
+			background:					-moz-linear-gradient('.$state['a'].', rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%, rgba('.$colour['two']['red'].','.$colour['two']['green'].','.$colour['two']['blue'].','.$colour['two']['opacity'].') '.$colour['two']['heat'].'%, rgba('.$colour['three']['red'].','.$colour['three']['green'].','.$colour['three']['blue'].','.$colour['three']['opacity'].') '.$colour['three']['heat'].'%, rgba('.$colour['four']['red'].','.$colour['four']['green'].','.$colour['four']['blue'].','.$colour['four']['opacity'].') '.$colour['four']['heat'].'%, rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%);
+			background:					-webkit-gradient('.$state['b'].', color-stop('.$colour['one']['heat'].'%, rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].')), color-stop('.$colour['two']['heat'].'%, rgba('.$colour['two']['red'].','.$colour['two']['green'].','.$colour['two']['blue'].','.$colour['two']['opacity'].')), color-stop('.$colour['three']['heat'].'%, rgba('.$colour['three']['red'].','.$colour['three']['green'].','.$colour['three']['blue'].','.$colour['three']['opacity'].')), color-stop('.$colour['four']['heat'].'%, rgba('.$colour['four']['red'].','.$colour['four']['green'].','.$colour['four']['blue'].','.$colour['four']['opacity'].')), color-stop('.$colour['one']['heat'].'%, rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].')));
+			background:					 -webkit-linear-gradient('.$state['a'].', rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%, rgba('.$colour['two']['red'].','.$colour['two']['green'].','.$colour['two']['blue'].','.$colour['two']['opacity'].') '.$colour['two']['heat'].'%, rgba('.$colour['three']['red'].','.$colour['three']['green'].','.$colour['three']['blue'].','.$colour['three']['opacity'].') '.$colour['three']['heat'].'%, rgba('.$colour['four']['red'].','.$colour['four']['green'].','.$colour['four']['blue'].','.$colour['four']['opacity'].') '.$colour['four']['heat'].'%, rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%);
+			background:					-o-linear-gradient('.$state['a'].', rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%, rgba('.$colour['two']['red'].','.$colour['two']['green'].','.$colour['two']['blue'].','.$colour['two']['opacity'].') '.$colour['two']['heat'].'%, rgba('.$colour['three']['red'].','.$colour['three']['green'].','.$colour['three']['blue'].','.$colour['three']['opacity'].') '.$colour['three']['heat'].'%, rgba('.$colour['four']['red'].','.$colour['four']['green'].','.$colour['four']['blue'].','.$colour['four']['opacity'].') '.$colour['four']['heat'].'%, rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%);
+			background:					-ms-linear-gradient('.$state['a'].', rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%, rgba('.$colour['two']['red'].','.$colour['two']['green'].','.$colour['two']['blue'].','.$colour['two']['opacity'].') '.$colour['two']['heat'].'%, rgba('.$colour['three']['red'].','.$colour['three']['green'].','.$colour['three']['blue'].','.$colour['three']['opacity'].') '.$colour['three']['heat'].'%, rgba('.$colour['four']['red'].','.$colour['four']['green'].','.$colour['four']['blue'].','.$colour['four']['opacity'].') '.$colour['four']['heat'].'%, rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%);
+			background:					linear-gradient('.$state['a'].', rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%, rgba('.$colour['two']['red'].','.$colour['two']['green'].','.$colour['two']['blue'].','.$colour['two']['opacity'].') '.$colour['two']['heat'].'%, rgba('.$colour['three']['red'].','.$colour['three']['green'].','.$colour['three']['blue'].','.$colour['three']['opacity'].') '.$colour['three']['heat'].'%, rgba('.$colour['four']['red'].','.$colour['four']['green'].','.$colour['four']['blue'].','.$colour['four']['opacity'].') '.$colour['four']['heat'].'%, rgba('.$colour['one']['red'].','.$colour['one']['green'].','.$colour['one']['blue'].','.$colour['one']['opacity'].') '.$colour['one']['heat'].'%);
+			        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=\'#ffffff\', endColorstr=\'#ffffff\', GradientType=1 );';
+			<{/php}>
+			padding: 						13px;
+			border: 						9px solid red;
+			font-size:						1.478996em;
+		}
+
+		#popupmission-close
+		{
+			font-weight:					bold; 
+			margin:							5px 3px 5px 0px;
+		}
+
+		#popupmission-message
+		{
+			padding:						11px;
+			font-weight:					bold;
+		}
+
+		#popupmission-header
+		{
+			text-align: 					left;
+			color: 							#a5ae56;  
+			text-shadow: 					-2px 5px 8px rgba(9, 14, 011, 0.69);
+			text-outline:					3px 2px black;
+			-webkit-text-outline:			3px 2px black;
+			-moz-text-outline:				3px 2px black;
+			margin-left: 					10px;
+			font-size: 						1.8699em;
+			margin-top: 					35px;
+			margin-bottom: 					35px;
+			letter-spacing: 				-3px;
+			font-weight:					900;
+		}
+
+		#popupmission-slogon
+		{
+
+			text-align: 					center;
+			font-size: 						1.4519669em;
+			margin-top: 					5px; 
+			margin-bottom: 					35px;
+			color: 							black;
+			text-shadow: 					-2px 4px 6px rgba(9, 29, 91, 0.79);
+			text-outline:					2px 2px red;
+			-webkit-text-outline:			2px 2px red;
+			-moz-text-outline:				2px 2px red;
+			padding-left: 					41px;
+			padding-right: 					41px;
+			line-height: 					0.985699em;
+			letter-spacing: 				-2px;
+			font-weight:			`		700;
+		}
+
+		#popupmission-slogon-red
+		{
+
+			color: 							red;
+			text-shadow: 					2px 5px 6px rgba(91, 9, 39, 0.99);
+			text-outline:					2px 2px black;
+			-webkit-text-outline:			2px 2px black;
+			-moz-text-outline:				2px 2px black;
+			padding-left: 					7px;
+			padding-right: 					7px;
+			letter-spacing: 				-2px;
+			font-weight:					bold;
+		}
+
+	</style>
+	<{/if}>
+	
+	<!--  Fonts  -->
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">

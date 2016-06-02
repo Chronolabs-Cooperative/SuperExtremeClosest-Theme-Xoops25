@@ -1,0 +1,49 @@
+/**
+ * Chronolabs Cooperative ~ Xortify Honeypot
+ *
+ * You may not change or alter any portion of this comment or credits
+ * of supporting developers from this source code or any supporting source code
+ * which is considered copyrighted (c) material of the original comment or credit authors.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * @copyright       Chronolabs Coopertive (Australia)  http://web.labs.coop
+ * @copyright       Xortify Honeypot  https://xortify.com
+ * @license         GNU GPL 2 (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+ * @package         xoops-theme
+ * @subpackage		extreme-super-closest
+ * @author         	Simon Antony Roberts (wishcraft/mynamesnot/cej) - open@extraterrestrialphysics.us
+ */
+ 
+@CHARSET "UTF-8";
+
+
+#left_column {
+	min-width: 682px;
+	width: 100%;
+	float: left;
+	box-shadow: 6px 6px 3px #8e14fa;
+	border: 14px solid #87ae87;
+	border-radius: 18px;
+	padding: 0px;
+	display: inline-block;
+	text-shadow: 2px 3px 3px #d00f88;
+}
+
+
+#left_column li {
+	padding-left: 15%;
+	margin-bottom: 11px;
+    font-size: 111.1831%;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    letter-spacing: 101.1831%;
+    list-style: disc #0e0a01 !important!
+}
+
+
+.complete-length
+{
+	width: 1010px !important;
+}

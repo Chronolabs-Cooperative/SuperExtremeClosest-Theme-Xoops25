@@ -1,0 +1,41 @@
+<{assign var=theme_name value=$xoTheme->folderName}><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+	<head>
+	    <!-- Metas -->
+	    <{includeq file="$theme_name/xotpl/xo_meta.html"}>
+	    <{includeq file="$theme_name/xotpl/xo_rss.html"}>
+	    <!-- Scripts -->
+	    <{includeq file="$theme_name/xotpl/xo_scripts.html"}>
+	    <!-- Stylesheets -->
+	    <{includeq file="$theme_name/xotpl/xo_stylesheets.html"}>
+		<!-- customized header contents -->
+	 	<{$xoops_module_header}>
+    </head>
+    <body>
+        <div id="bg_top">
+        	<div id="wrap_bg">
+        		<div id="wrap">
+        		<{includeq file="$theme_name/xotpl/xo_header.html}>
+        			<{if $smary.const.ESCTHEME_SLIDER_SUPPORTED}>
+        			<{includeq file="$theme_name/xotpl/xo_slider.html"}>
+        			<{/if}>
+					<div class="container center" id="content">
+						<div id="redirect">
+							<div class="message">
+								<{$message}>
+								<br />
+								<center>
+									<img src="<{xoImgUrl images/logo.png}>" alt="<{$message}>" />
+								</center>
+							</div>
+							<div class="notreload">
+								<{$lang_ifnotreload}>
+							</div>
+							<{if $xoops_logdump != ''}><div><{$xoops_logdump}></div><{/if}>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

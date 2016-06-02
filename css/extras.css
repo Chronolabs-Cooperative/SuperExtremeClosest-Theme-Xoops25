@@ -1,0 +1,245 @@
+/**
+ * Chronolabs Cooperative ~ Xortify Honeypot
+ *
+ * You may not change or alter any portion of this comment or credits
+ * of supporting developers from this source code or any supporting source code
+ * which is considered copyrighted (c) material of the original comment or credit authors.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * @copyright       Chronolabs Coopertive (Australia)  http://web.labs.coop
+ * @copyright       Xortify Honeypot  https://xortify.com
+ * @license         GNU GPL 2 (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+ * @package         xoops-theme
+ * @subpackage		extreme-super-closest
+ * @author         	Simon Antony Roberts (wishcraft/mynamesnot/cej) - open@extraterrestrialphysics.us
+ */
+ 
+@CHARSET "UTF-8";
+
+.news_top{
+    clear: both;	
+}
+
+.layer_border{
+font-weight: bold; 
+font-size: 20px;
+color: #066CB0;
+	background: url(../images/title_bg.jpg) repeat-x bottom;
+	padding-bottom: 3px;
+}
+
+.news_top_left{
+    background: url(../images/date_bg.jpg) no-repeat right;
+    width: 45px;
+    height: 42px;
+    float: left;
+    text-align: center;
+	margin: 5px 0px 0px 0px;
+}
+
+.news_top_left .date_day{
+    color: #ffffff;
+    
+    font-size: 111.1115%;
+    font-weight: normal;
+    padding-top: 8px;
+	line-height: 12px;
+}
+
+.news_top_left .date_month{
+    color: #ffffff;
+    
+    font-size: 111.1115%;
+    font-weight: normal;
+}
+
+.news_top_right{
+    float: left;
+    padding-left: 15px;
+    width: 529px;
+}
+
+.title_post_left{
+	float: left;
+}
+
+.title_post_right{
+	float: right;
+}
+
+/*gallery*/
+
+ .gallery_top{
+ 	background: url(../images/gallery_top.jpg) no-repeat;
+	height: 21px;
+ }
+ 
+ .gallery_bg{
+ 	background: url(../images/gallery_bg.jpg) repeat-y left;
+	padding: 0px 11px 0px 11px;
+ }
+ 
+  .gallery_bot{
+ 	background: url(../images/gallery_bot.jpg) no-repeat;
+	height: 21px;
+ }
+ 
+ .gal{
+ 	background: url(../images/gal_bg.jpg) no-repeat 0px 0px;
+	width: 457px;
+	height: 250px;
+	padding: 10px 10px 10px 10px;
+	float: left;
+	margin: 0px 10px 0px 10px;
+ }
+ 
+ .gal h3{
+ 	background: none;
+	margin-bottom: 0px;
+ }
+ 
+ .gal_img{
+ 	border: 1px solid #ffffff;
+ }
+ 
+ .gal p{
+ 	color: #ffffff;
+ }
+ 
+ .razd{
+ 	height: 10px;
+	clear: both;
+ }
+  
+  
+  
+/*about*/
+
+.date_news{
+	text-decoration: underline;
+}
+
+.news{
+	padding: 10px 0px 20px 0px;
+}
+
+/*contact*/
+
+#contact_form fieldset {
+    border: none;
+	padding-top: 20px;
+}
+
+#contact_form input {
+    margin-bottom: 5px;
+}
+
+#contact-submit, #contact-clear{
+    width: 74px;
+    height: 19px;
+    color: #efefef;
+    background: url(../images/contact_but.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    border: none;
+    
+    font-size: 111.1115%;
+    font-weight: normal;
+	font-style: italic;
+	margin-right: 40px;
+}
+
+#con_name, #con_email, #con_website {
+    width: 571px;
+    height: 29px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    background: url(../images/contact_input.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    color: #373636;
+	line-height: 29px;
+}
+
+#con_mess {
+    width: 571px;
+    height: 103px;
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    border: none;
+    background: url(../images/contact_mess.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    color: #373636;
+    margin-bottom: 15px;
+    font-size: 111.1115%;
+}
+
+.pad_left{
+    padding-left: 30px;
+}
+
+.contact_news{
+	padding-top: 15px;
+}
+  
+  
+#prew_box{
+	background: url(../images/prew_bg.png) no-repeat top left;
+	height: 329px;
+	padding: 11px;
+}
+
+#prew_but_box{
+	width: 76px;
+	margin: 0 auto;
+	height: 20px;
+	padding-top: 20px;
+}
+
+#prew_but_left{
+	float: left;
+}
+
+#prew_but_right{
+	float: right;
+}
+  
+  
+  
+.ls{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.ls li{
+    background: url(../images/ls.gif) no-repeat 0px 7px;
+    margin-bottom: 4px;
+    padding-left: 15px;
+}
+
+.ls2{
+    list-style: none;
+    padding-left: 0px;
+	padding-top: 5px;
+}
+
+.ls2 li{
+    background: url(../images/ls2.gif) no-repeat 0px 7px;
+    padding-bottom: 4px;
+    padding-left: 15px;
+}
+
+.button_box{
+	padding-top: 5px;
+}
+
+.button_box a{
+	padding-right: 20px;
+}

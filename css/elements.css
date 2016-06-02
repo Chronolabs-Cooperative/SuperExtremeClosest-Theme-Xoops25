@@ -1,0 +1,299 @@
+/**
+ * Chronolabs Cooperative ~ Xortify Honeypot
+ *
+ * You may not change or alter any portion of this comment or credits
+ * of supporting developers from this source code or any supporting source code
+ * which is considered copyrighted (c) material of the original comment or credit authors.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * @copyright       Chronolabs Coopertive (Australia)  http://web.labs.coop
+ * @copyright       Xortify Honeypot  https://xortify.com
+ * @license         GNU GPL 2 (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+ * @package         xoops-theme
+ * @subpackage		extreme-super-closest
+ * @author         	Simon Antony Roberts (wishcraft/mynamesnot/cej) - open@extraterrestrialphysics.us
+ */
+ 
+@CHARSET "UTF-8";
+
+
+html
+{	font-size: 1.125666em;
+	font-family: sans-serif;
+	font-family: 'Ubuntu Condensed', sans-serif;
+    min-height: 119% !important;;
+    max-width: 100% !important;;
+    width: 100% !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=79)";
+    filter: alpha(opacity=79);
+    line-height: 1.222337em;
+    color: #ffffff;
+    background: url(../images/bg.jpg);
+    text-align: justify;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=89)";
+    filter: alpha(opacity=89);
+    -moz-opacity: 0.89;
+    -khtml-opacity: 0.89;
+    opacity: 0.89;
+    min-height: 119% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+img{
+    padding: 0px;
+    border: none;
+    border-radius: 4px;
+}
+
+a{
+    color: #ae65fe;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #c70000;
+    letter-spacing: -2px;
+}
+
+h1
+{
+	letter-spacing: -2px;
+}
+
+h2, h3
+{
+	letter-spacing: -2.75px;
+}
+
+h4, h5
+{
+	letter-spacing: -3.35px;
+}
+
+h1
+{
+	font-size: 199.1831%;
+	color: #feedcb;
+	font-style:  italic;
+	font-weight: bold;
+	margin-top: 18px;
+	margin-bottom: 5px;
+}
+
+h2
+{
+	font-size: 176.1831%;
+	color: #feedcb;
+	font-style:  italic;
+	font-weight: bold;
+	margin-top: 13px;
+	margin-bottom: 7px;
+
+}
+
+h3
+{
+
+	font-size: 158.1831%;
+	color: #feedcb;
+	font-style:  italic;
+	font-weight: normal;
+	background: url(../images/title_footer2.jpg) repeat-x bottom;
+	padding-bottom: 4px;
+	margin-bottom: 9px;
+}
+
+h4
+{
+
+	font-size: 144.1831%;
+	color: #feedcb;
+	font-style:  italic;
+	font-weight: normal;
+}
+
+
+h5
+{
+
+	font-size: 111.1831%;
+	color: #feedcb;
+	font-style:  italic;
+	font-weight: normal;
+}
+
+
+h1, h2 
+{
+	-webkit-text-stroke: 2px #000;
+	-moz-text-stroke: 2px #000;
+	text-stroke: 2px #000;
+	-webkit-text-shadow:
+	       3px 3px 0 #000,
+	     -2px -2px 0 #000,  
+	      2px -2px 0 #000,
+	      -2px 2px 0 #000,
+	       2px 2px 0 #000;
+	-moz-text-shadow:
+	       3px 3px 0 #000,
+	     -2px -2px 0 #000,  
+	      2px -2px 0 #000,
+	      -2px 2px 0 #000,
+	       2px 2px 0 #000;
+	 text-shadow:
+	       3px 3px 0 #000,
+	     -2px -2px 0 #000,  
+	      2px -2px 0 #000,
+	      -2px 2px 0 #000,
+	       2px 2px 0 #000;
+}
+
+h3, h4, h5
+{
+	-webkit-text-stroke: 1px #000;
+	-moz-text-stroke: 1px #000;
+	text-stroke: 1px #000;
+	-webkit-text-shadow:
+	       2px 2px 0 #000,
+	     -1px -1px 0 #000,  
+	      1px -1px 0 #000,
+	      -1px 1px 0 #000,
+	       1px 1px 2px #000;
+	-moz-text-shadow:
+	       2px 2px 0 #000,
+	     -1px -1px 0 #000,  
+	      1px -1px 0 #000,
+	      -1px 1px 0 #000,
+	       1px 1px 2px #000;
+	 text-shadow:
+	       2px 2px 0 #000,
+	     -1px -1px 0 #000,  
+	      1px -1px 0 #000,
+	      -1px 1px 0 #000,
+	       1px 1px 2px #000;
+}
+
+p, ol, ul, label,form {
+	margin-bottom: 11px;
+    font-size: 123.138111%;
+    padding-top: 1px;
+    padding-bottom: 25px;
+    line-height: 0.986521em;
+    padding-left: 21px;
+	padding-right: 21px;
+    letter-spacing: 89%;
+}
+
+blockquote, iframe, textarea {
+	margin-top: 4px !important;
+	margin-bottom: 2px !important;
+	padding-top: 11px;
+	padding-left: 5.69%;
+	padding-right: 8.9859%;
+	padding-bottom: 4px;
+    font-size: 135.99966331%;
+    line-height: 1.123em;
+    letter-spacing: -0.75px;
+}
+
+
+input, select, checkbox, radio, textarea, blockquote, button, iframe {
+	font-name: inherit !important;
+	padding: 4px 3px 2px 4px;
+	margin: 3px 2px 3px 2px;
+    font-size: 101.122211%;
+    text-shadow: 3px 2px 2px #000111;
+    line-height: 0.986521em;
+    letter-spacing: 89%;
+    border-radius: 5px;
+    border: 2px solid #0ee111;
+    box-shadow: 2px 3px 3px #0ee111;
+}
+
+
+iframe
+{
+	box-shadow: 6px 4px 9px #0ee111 !important;
+	border: 5px solid #0ee111 !important;
+	margin-top: 27px !important;
+	margin-bottom: 8px !important;
+	margin-left: 9% !important;
+	margin-right: 9% !important;
+	width: 81% !important;
+	border-radius: 9px;
+}
+
+embed
+{
+	text-align: center !important;
+	box-shadow: 6px 4px 9px #0ee111 !important;
+	background-color: #099111 !important;
+	margin-top: 15px !important;
+	margin-bottom: 8px !important;
+	margin-left: 9% !important;
+	margin-right: 9% !important;
+	border-radius: 5px !important;
+	width: 81% !important;
+	border: 1px solid rgb(11, 11 11) !important;
+}
+
+blockquote, textarea
+{
+	padding: 12px !important;;
+	background-color: #eeaeef !important;
+	color: rgb(40, 235, 99) !important;
+	font-weight: 700 !important;
+	margin-top: 19px !important;
+	margin-bottom: 4px;
+	margin-left: 9% !important;
+	margin-right: 9% !important;
+	width: 81% !important;
+	border: 3px dash rgb(11, 11 11) !important;
+	text-shadow: 2px 4px 3px #786e99 !important;
+	box-shadow: 6px 4px 9px #0ee111 !important;
+	border-radius: 12px;
+	font-size: 76% !important;
+}
+
+
+form td, form input
+{
+	padding: 3px;
+}
+
+tr .head
+{
+	width: 31.993213% !important;
+}
+
+ul, ol {
+	margin-left: 11px;
+	letter-spacing: -2.433243px;
+	line-height: 0.76821em;
+	padding-right: 11.3353%;
+	display: block;
+}
+
+li 
+{
+    font-size: 81.998111%;
+    line-height: 1.121em;
+    display: block;
+    margin: 2px 0px 0px 0px !important;
+    padding: 6px 2px 2px 3px !important;
+}

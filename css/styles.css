@@ -1,0 +1,135 @@
+/**
+ * Chronolabs Cooperative ~ Xortify Honeypot
+ *
+ * You may not change or alter any portion of this comment or credits
+ * of supporting developers from this source code or any supporting source code
+ * which is considered copyrighted (c) material of the original comment or credit authors.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * @copyright       Chronolabs Coopertive (Australia)  http://web.labs.coop
+ * @copyright       Xortify Honeypot  https://xortify.com
+ * @license         GNU GPL 2 (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+ * @package         xoops-theme
+ * @subpackage		extreme-super-closest
+ * @author         	Simon Antony Roberts (wishcraft/mynamesnot/cej) - open@extraterrestrialphysics.us
+ */
+ 
+@CHARSET "UTF-8";
+
+@import url(elements.css);
+@import url(rightcolumn.css);
+@import url(leftcolumn.css);
+@import url(contents.css);
+@import url(highlights.css);
+@import url(blocks.css);
+@import url(menus.css);
+@import url(specials.css);
+@import url(extras.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header, .header {
+	height: 37px !important;
+}
+.header2, #header2 {
+	min-height: 77px !important;
+}
+
+.clear{
+	clear: both;
+}
+
+#bg_top{
+	background: url(../images/bg_top.jpg) repeat-x top;
+	min-height: 100%;
+}
+
+#wrap{
+	width: 1016px;
+	margin: 0 auto;
+	padding: 9px 0px 0px 0px;
+}
+
+#wrap_bg{
+	width: 1216px;
+	margin: 0 auto;
+	background: url(../images/logo_bg.png) no-repeat left top;
+}
+
+#logo {
+	font-size: 187%;
+	float: right;
+	text-align: right;
+	width: 595px;
+	height: 110px;
+	padding-top: 70px;
+	position: relative;
+	z-index: 9999;
+	left: -120px;
+	top: -14px;
+}
+
+#logo h1 a{
+	
+	font-size: 108.10001%;
+	color: #faffe8;
+	font-style: italic;
+	font-weight: 900;
+	font-weight: bold;
+	-webkit-text-stroke: 3px #f5ef33;
+	-moz-text-stroke: 3px #f5ef33;
+	text-stroke: 3px #f5ef33;
+	-webkit-text-shadow:
+	       4px 4px 0 #e4187c,
+	     -2px -2px 0 #e4187c,  
+	      2px -2px 0 #e4187c,
+	      -2px 2px 0 #e4187c,
+	       2px 2px 0 #e4187c;
+	-moz-text-shadow:
+	       4px 4px 0 #e4187c,
+	     -2px -2px 0 #e4187c,  
+	      2px -2px 0 #e4187c,
+	      -2px 2px 0 #e4187c,
+	       2px 2px 0 #e4187c;
+	 text-shadow:
+	       4px 4px 0 #e4187c,
+	     -2px -2px 0 #e4187c,  
+	      2px -2px 0 #e4187c,
+	      -2px 2px 0 #e4187c,
+	       2px 2px 0 #e4187c;
+}
+
+#logo a small{
+	position: relative;
+	top: 11px;
+	font-size: 135.1115%;
+	color: #f5ef33;
+	font-style: italic;
+	font-weight: 600;
+	-webkit-text-stroke: 2px #ffffff;
+	-moz-text-stroke: 2px #ffffff;
+	text-stroke: 2px #ffffff;
+	-webkit-text-shadow:
+	       3px 2px 0 #0a0a0a,
+	     -1px -1px 0 #0a0a0a,  
+	      1px -1px 0 #0a0a0a,
+	      -1px 1px 0 #0a0a0a,
+	       1px 1px 0 #0a0a0a;
+	-moz-text-shadow:
+	       3px 2px 0 #0a0a0a,
+	     -1px -1px 0 #0a0a0a,  
+	      1px -1px 0 #0a0a0a,
+	      -1px 1px 0 #0a0a0a,
+	       1px 1px 0 #0a0a0a;
+	 text-shadow:
+	       3px 2px 0 #0a0a0a,
+	     -1px -1px 0 #0a0a0a,  
+	      1px -1px 0 #0a0a0a,
+	      -1px 1px 0 #0a0a0a,
+	       1px 1px 0 #0a0a0a;
+}

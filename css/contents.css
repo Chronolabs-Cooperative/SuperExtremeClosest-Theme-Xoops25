@@ -1,0 +1,115 @@
+/**
+ * Chronolabs Cooperative ~ Xortify Honeypot
+ *
+ * You may not change or alter any portion of this comment or credits
+ * of supporting developers from this source code or any supporting source code
+ * which is considered copyrighted (c) material of the original comment or credit authors.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * @copyright       Chronolabs Coopertive (Australia)  http://web.labs.coop
+ * @copyright       Xortify Honeypot  https://xortify.com
+ * @license         GNU GPL 2 (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+ * @package         xoops-theme
+ * @subpackage		extreme-super-closest
+ * @author         	Simon Antony Roberts (wishcraft/mynamesnot/cej) - open@extraterrestrialphysics.us
+ */
+ 
+@CHARSET "UTF-8";
+
+
+
+#content{
+	display: block;
+	color: #bbbeff;
+	font-style:  normal !important;
+	font-weight: normal !important;
+	line-spacing: 1.32em;
+}
+
+
+#content ol, #content ul {
+	margin-left: 21px !important;
+	list-style: disc !important; 
+	list-color: RGB(196, 112, 210) !important;
+}
+
+
+
+.text{
+	padding: 10px 0px 0px 0px;
+}
+
+.italic_style{
+	font-style: italic;
+}
+
+.read{
+	float: right;
+	padding: 0px 10px 0px 0px;
+}
+
+.read a{
+	color: #c70000;
+	font-weight: normal;
+}
+
+.read a:hover{
+	color: #000000;
+}
+
+
+
+
+#content_bg
+{
+	padding: 16px;
+}
+/*footer2*/
+
+#footer2 {
+	display: inline-block;
+	padding: 0px !important;
+	width: 972px;
+	margin-bottom: 42px;
+	margin-top: 27px;
+	min-height: inherant;
+	line-height: 0.986521em;
+    letter-spacing: 89%;
+    border-radius: 12px;
+    border: 2px solid #111111;
+    box-shadow: -4px 6px 11px #fefbfe;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#footer2 a{
+	color: #ffffff;
+}
+
+#footer2 a:hover{
+	color: #c70000;
+}
+
+#footer2_top_text{
+	padding: 12px;	
+}
+
+#footer2_top_text p{
+	color: #efefef;
+}
+
+.footer2_top_colum1{
+	width: 29%;
+	float: left;
+	display: block;
+}
+
+.footer2_top_colum2{
+	width: 29%;
+	float: left;
+	padding: 0px;
+	display: block;
+}
+

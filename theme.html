@@ -1,0 +1,126 @@
+<!-- 
+  - Chronolabs Cooperative ~ Xortify Honeypot
+  -
+  - You may not change or alter any portion of this comment or credits
+  - of supporting developers from this source code or any supporting source code
+  - which is considered copyrighted (c) material of the original comment or credit authors.
+  - This program is distributed in the hope that it will be useful,
+  - but WITHOUT ANY WARRANTY; without even the implied warranty of
+  - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  -
+  - @copyright      Chronolabs Coopertive (Australia)  http://web.labs.coop
+  - @copyright      Xortify Honeypot  https://xortify.com
+  - @license        GNU GPL 2 (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+  - @package        xoops-theme
+  - @subpackage		extreme-super-closest
+  - @author         Simon Antony Roberts (wishcraft/mynamesnot/cej) - open@extraterrestrialphysics.us
+  -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+	<{assign var=theme_name value=$xoTheme->folderName}>
+	<{assign var=theme_tpls value=$xoTheme->folderName|cat:'/xotpl'}>
+	<{assign var=radioo value=$smarty.session.radiostreamerbkgnd}>
+	<{if isset($smarty.session.shown_mission) || $smarty.session.shown_mission == true}>
+		<{assign var=show_mission value=false}>
+	<{else}>
+		<{assign var=show_mission value=true}>
+	<{/if}>
+	<head>
+	    <!-- Metas -->
+	    <{includeq file="$theme_tpls/xo_meta.html"}>
+	    <{includeq file="$theme_tpls/xo_rss.html"}>
+	    
+	    <!-- Stylesheets -->
+	    <{includeq file="$theme_tpls/xo_stylesheets.html"}>
+	    
+	    <!-- Scripts -->
+	    <{includeq file="$theme_tpls/xo_scripts.html"}>
+
+		<!-- customized header contents -->
+	 	<{$xoops_module_header}>
+    </head>
+    <body>
+        <div id="bg_top">
+        	<div id="wrap_bg">
+        		<div id="wrap">
+        			<!--  Header Start -->
+        			<{includeq file="$theme_tpls/xo_header.html"}>
+        			<{if $smary.const.ESCTHEME_SLIDER_SUPPORTED}>
+        				<!-- Included: Slider Navigation -->
+        				<{includeq file="$theme_tpls/xo_slider.html"}>
+        			<{/if}>
+        			<!-- Header End -->
+					<table id="content" <{if count($xoBlocks.canvas_right) == 0}> width="1010px"<{/if}>>
+					<tr  <{if count($xoBlocks.canvas_right) == 0}> width="1010px"<{/if}>>
+						<td  <{if count($xoBlocks.canvas_right) == 0}> width="1010px"<{/if}> style="padding-right: 21px; vertical-align: top;" <{if count($xoBlocks.canvas_right) == 0}> colspan="2"<{/if}>>
+							<div id="left_column" <{if count($xoBlocks.canvas_right) == 0}> class="complete-length"<{/if}>>
+							    <div id="content_bg" style="">
+	  							<!-- Start content module page -->
+	            					<{if $xoops_contents && ($xoops_contents != ' ') }><div id="content"><{$xoops_contents}></div><{/if}>
+	           						<!-- End content module -->
+	                        		<{foreach item=block from=$xoBlocks.page_topcenter}>
+		                            	<{includeq file="$theme_tpls/xo_block_center_c.html"}>
+			                        <{/foreach}>
+		                        <!-- End center-center blocks loop -->
+									 <div class="clear"></div>
+								</div>
+								<div class="left_news_bot"></div>
+							</div>
+							<!-- End left news box -->
+							<!-- Start left news box -->
+							<div class="left_news_box" <{if count($xoBlocks.canvas_right) == 0}> class="complete-length"<{/if}>>
+								<div class="left_news_top"></div>
+									<div class="left_news_bg">
+										<div id="bottomCcolumn" colspan="2">
+	                            		<{foreach from=$xoBlocks.page_bottomcenter item=block}>
+	                                		<{include file="$theme_tpls/xo_block_center_c.html"}>
+	                                		<div class="clear"></div>
+	                            		<{/foreach}>
+	                            		</div>
+								      	<div class="text"> </div>
+										<div class="clear"></div>
+									</div>
+								</div>
+							</div>
+						</td>
+					 	<{if count($xoBlocks.canvas_right) != 0}> 
+						<td style="padding-left: 9px; vertical-align: top;">
+							<div id="right_column">
+								<div id="content_bg" style="">
+					        	<{if $xoops_showrblock}>
+					            	<div id="rightcolumn">
+					            	<{foreach item=block from=$xoBlocks.canvas_right}>
+					               		<{includeq file="$theme_tpls/xo_block_right.html"}>
+					               		<div class="clear"></div>
+					            	<{/foreach}>
+					            	</div>
+					       		 <{/if}>
+					        	<!-- End right blocks loop -->
+								<div class="clear"></div>
+								</div>
+							</div>
+						</td>
+					<{/if}>
+				</tr>
+				<{includeq file="$theme_tpls/xo_footer.html"}>
+			</table>
+       	</div>
+    </div>
+	<div class="clear" style="height: 55px;"></div>
+<{if $show_mission}>
+	<div id="blocker">
+		<div id="mission">
+			<div id="popupmission" class="window">
+				<div align="right" id="popupmission-close"><img src="<{xoImgUrl images/close.png}>" width="16" style="border: none; cursor: pointer;" class="close" /></div>
+				<div align="center" id="popupmission-message">
+					<h1 id="popupmission-header"><{$smarty.const.ESCTHEME_MISSION_OBJECT}></h1>
+					<div id="popupmission-slogon"><{$smarty.const.ESCTHEME_MISSION_CLAUSE}></div>
+					<img src="<{xoImgUrl images/logo.png}>" style="clear:now;" width="313px" />
+				</div>
+			</div>
+		</div>	
+	</div>
+	<{php}>$_SESSION['shown_mission'] = true;<{/php}>
+<{/if}>
+    </body>
+</html>

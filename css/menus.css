@@ -1,0 +1,197 @@
+/**
+ * Chronolabs Cooperative ~ Xortify Honeypot
+ *
+ * You may not change or alter any portion of this comment or credits
+ * of supporting developers from this source code or any supporting source code
+ * which is considered copyrighted (c) material of the original comment or credit authors.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * @copyright       Chronolabs Coopertive (Australia)  http://web.labs.coop
+ * @copyright       Xortify Honeypot  https://xortify.com
+ * @license         GNU GPL 2 (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+ * @package         xoops-theme
+ * @subpackage		extreme-super-closest
+ * @author         	Simon Antony Roberts (wishcraft/mynamesnot/cej) - open@extraterrestrialphysics.us
+ */
+ 
+@CHARSET "UTF-8";
+
+
+#xoBreadcrumb
+{
+	display: none;
+	float: right !important;
+	text-shadow: 2px 1px 4px #11d00f !important;
+	font-size: 1.2933429em !important;
+	color: #020122 !important;
+	text-align: center;
+}
+
+#xoBreadcrumb a {
+	text-shadow: 4px 2px 4px #11d00f !important;
+	font-size: 1.299729em !important;
+	color: #020122 !important;
+}
+
+#xoBreadcrumb a:hover {
+	text-shadow: 2px 3px 6px #11d00f !important;
+	font-size: 1.299729em !important;
+	color: #e2dde2 !important;
+}
+
+
+
+#xo-pagenav, .pagenav{
+ 	padding-left: 10px;	
+ }
+ 
+#xo-pagenav a, .pagenav a{
+ 	display: block;
+	float: left;
+	background: url(../images/pagenav_bg.jpg) no-repeat;
+	width: 20px;
+	height: 21px;
+	line-height: 21px;
+	text-align: center;
+	color: #ffffff;
+	margin-right: 5px;
+	font-weight: normal;
+ }
+ 
+#xo-pagenav a:hover, .pagenav a:hover{
+	color: #ffffff;
+	background: url(../images/pagenav_select.jpg) no-repeat;
+}
+
+
+#menu{
+	background: url(../images/menu_bg.jpg) no-repeat;
+	float: right;
+	width: 573px;
+	height: 39px;
+}
+
+#menu ul {
+    padding-left: 10px;
+    padding-top: 7px;
+    margin: 0px;
+}
+
+#menu li {
+    display: block;
+}
+
+#menu a {
+    
+    font-size: 14px;
+    font-weight: normal;
+    display: block;
+    float: left;
+    width: 108px;
+    height: 26px;
+    text-align: center;
+    text-decoration: none;
+    color: #262626;
+	padding-right: 2px;
+	padding-top: 3px;
+}
+
+#menu .but1_menu a:hover, #menu .but1_menu .active {
+    height: 26px;
+    background: url(../images/menu_active1.jpg) no-repeat center top;
+	color: #ffffff;
+}
+
+#menu .but2_menu a:hover, #menu .but2_menu .active {
+    height: 26px;
+    background: url(../images/menu_active2.jpg) no-repeat center top;
+	color: #262626;
+}
+
+#menu .but3_menu a:hover, #menu .but3_menu .active {
+    height: 26px;
+    background: url(../images/menu_active3.jpg) no-repeat center top;
+	color: #ffffff;
+}
+
+#menu .but4_menu a:hover, #menu .but4_menu .active {
+    height: 26px;
+    background: url(../images/menu_active4.jpg) no-repeat center top;
+	color: #ffffff;
+}
+
+#menu .but5_menu a:hover, #menu .but5_menu .active {
+    height: 26px;
+    background: url(../images/menu_active5.jpg) no-repeat center top;
+	color: #ffffff;
+}
+/* ===== block main menu ===== */
+#mainmenu {}
+#mainmenu a {
+	display: 			block;
+	background-color:	transparent;
+	line-height: 		2.5em;
+	color: 				#787878;
+	font-weight: 		bold;
+	font-size: 			1.1em;
+	border-top: 		1px dashed #94B301;
+	padding-left: 		1em;
+}
+#mainmenu a:hover {
+	background-color: 	#787878;
+	color: 				#fff;
+	border-radius: 				5px;
+	-moz-border-radius: 		5px;
+	-webkit-border-radius: 		5px;
+	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+}
+#mainmenu a:active, #mainmenu a.current {
+	background-color: 	#ccc;
+	color			:	#fff;
+	border-radius: 				5px;
+	-moz-border-radius: 		5px;
+	-webkit-border-radius: 		5px;
+	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+}
+#mainmenu a:visited {}
+#mainmenu a.menuTop  {border-top: none;}
+#mainmenu a.menuMain {}
+#mainmenu a.menuSub{
+	padding-left: 		1.5em;
+	font-size: 			1em;
+	font-style: 		italic;
+	font-weight: 		normal;
+	line-height: 		1.00123em;
+	border-top: 		none;
+}
+#mainmenu a.menuSub:hover  {
+	background-color: 	transparent;
+	color: 				#000;
+	text-decoration: 	underline;
+	border-radius: 					none;
+		-moz-border-radius: 		none;
+		-webkit-border-radius: 		none;
+	box-shadow: 			none;
+		-moz-box-shadow: 	none;
+		-webkit-box-shadow: none;
+}
+#mainmenu a.maincurrent {}
+/* ===== block user menu ===== */
+#usermenu {}
+#usermenu a {display: block; padding-left: 1.1125em; line-height: 1.02128em;}
+#usermenu a:hover  { text-decoration: underline;}
+#usermenu a:active, #usermenu a.current { color: #000; background-color: transparent;}
+#usermenu a:visited {}
+#usermenu a.menuTop {}
+#usermenu a.highlight {}
+#mainmenu a, #usermenu a
+{
+	padding: 0px;
+	margin: 0px;
+}
