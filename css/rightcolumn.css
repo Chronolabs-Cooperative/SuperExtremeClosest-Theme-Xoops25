@@ -20,14 +20,21 @@
 
 
 #right_column {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=269)";
+    filter: alpha(opacity=269);
+    -moz-opacity: 2.69;
+    -khtml-opacity: 2.69;
+    opacity: 2.69;
 	width: 232px !important;
 	float: right;
+	left: 255px !important;
 	box-shadow: 6px 6px 3px #84e8a5;
 	border: 8px solid #87ae87;
 	border-radius: 18px;
 	padding: 0px;
 	display: inline-block;
 	margin-left: 13px;
+	clear: none;
 }
 
 

@@ -93,7 +93,7 @@
     height: 26px;
     text-align: center;
     text-decoration: none;
-    color: #262626;
+    color: #200006;
 	padding-right: 2px;
 	padding-top: 3px;
 }
@@ -133,7 +133,7 @@
 	display: 			block;
 	background-color:	transparent;
 	line-height: 		2.5em;
-	color: 				#787878;
+	color: 				#200006;
 	font-weight: 		bold;
 	font-size: 			1.1em;
 	border-top: 		1px dashed #94B301;
@@ -184,8 +184,8 @@
 #mainmenu a.maincurrent {}
 /* ===== block user menu ===== */
 #usermenu {}
-#usermenu a {display: block; padding-left: 1.1125em; line-height: 1.02128em;}
-#usermenu a:hover  { text-decoration: underline;}
+#usermenu a {display: block; padding-left: 1.1125em; line-height: 1.02128em; color: #200006;}
+#usermenu a:hover  { text-decoration: underline; color: #fff;}
 #usermenu a:active, #usermenu a.current { color: #000; background-color: transparent;}
 #usermenu a:visited {}
 #usermenu a.menuTop {}

@@ -21,11 +21,19 @@
 
 
 #content{
+	margin: 42px !important;
 	display: block;
-	color: #bbbeff;
-	font-style:  normal !important;
-	font-weight: normal !important;
+	color: #020304;
+	background-color: #fefefe;
+	border: 3px dashed #000;
+	border-radius: 13px;
+	padding: 13px;
 	line-spacing: 1.32em;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=89)";
+    filter: alpha(opacity=89);
+    -moz-opacity: 0.89;
+    -khtml-opacity: 0.89;
+    opacity: 0.89;
 }
 
 

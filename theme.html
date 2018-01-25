@@ -50,62 +50,69 @@
         				<{includeq file="$theme_tpls/xo_slider.html"}>
         			<{/if}>
         			<!-- Header End -->
-					<table id="content" <{if count($xoBlocks.canvas_right) == 0}> width="1010px"<{/if}>>
-					<tr  <{if count($xoBlocks.canvas_right) == 0}> width="1010px"<{/if}>>
-						<td  <{if count($xoBlocks.canvas_right) == 0}> width="1010px"<{/if}> style="padding-right: 21px; vertical-align: top;" <{if count($xoBlocks.canvas_right) == 0}> colspan="2"<{/if}>>
-							<div id="left_column" <{if count($xoBlocks.canvas_right) == 0}> class="complete-length"<{/if}>>
-							    <div id="content_bg" style="">
-	  							<!-- Start content module page -->
-	            					<{if $xoops_contents && ($xoops_contents != ' ') }><div id="content"><{$xoops_contents}></div><{/if}>
-	           						<!-- End content module -->
-	                        		<{foreach item=block from=$xoBlocks.page_topcenter}>
-		                            	<{includeq file="$theme_tpls/xo_block_center_c.html"}>
-			                        <{/foreach}>
-		                        <!-- End center-center blocks loop -->
-									 <div class="clear"></div>
+					<table width="1010px">
+						<tr>
+							<{if count($xoops_lblocks) }>
+							<td rowspan="3" style="padding-left: 9px; vertical-align: top; align="justify" valign="top" id="left_column">
+								<div id="leftcolumn">
+								<{foreach item=block from=$xoops_lblocks}>
+									<{includeq file="$theme_tpls/xo_block_left.html" block=$block}>
+									<div class="clear" style="height: 9px;"></div>
+								<{/foreach}>
 								</div>
-								<div class="left_news_bot"></div>
-							</div>
-							<!-- End left news box -->
-							<!-- Start left news box -->
-							<div class="left_news_box" <{if count($xoBlocks.canvas_right) == 0}> class="complete-length"<{/if}>>
-								<div class="left_news_top"></div>
-									<div class="left_news_bg">
-										<div id="bottomCcolumn" colspan="2">
-	                            		<{foreach from=$xoBlocks.page_bottomcenter item=block}>
-	                                		<{include file="$theme_tpls/xo_block_center_c.html"}>
-	                                		<div class="clear"></div>
-	                            		<{/foreach}>
-	                            		</div>
-								      	<div class="text"> </div>
-										<div class="clear"></div>
+							</td>
+							<{/if}>
+							<td class="<{if count($xoops_lblocks) && count($xoops_rblocks) }>center_column_both<{elseif count($xoops_lblocks) && !count($xoops_rblocks)}>center_column_left<{elseif !count($xoops_lblocks) && count($xoops_rblocks)}>center_column_right<{elseif !count($xoops_lblocks) && !count($xoops_rblocks)}>center_column<{/if}>" align="justify" valign="top" style="padding-left: 9px; vertical-align: top; padding: 7px !important;">
+					
+								<div style="width: 100% important!:">
+									<div id="topleftcenter" style="float: left; width: 49.9991% !important; clear: none;">
+										<{foreach item=block from=$xoops_clblocks}>
+											<{includeq file="$theme_tpls/xo_block_center_l.html" block=$block}>
+											<div class="clear" style="height: 9px;"></div>
+										<{/foreach}>
+									</div>
+									<div id="toprightcenter"  style="float: right; width: 49.9991% !important; clear: right;">
+										<{foreach item=block from=$xoops_crblocks}>
+											<{includeq file="$theme_tpls/xo_block_center_r.html" block=$block}>
+											<div class="clear" style="height: 9px;"></div>
+										<{/foreach}>
+									</div>
+									<div  id="topcentercenter" style="margin-top: 8px; width: 100%">
+										<{foreach item=block from=$xoops_ccblocks}>
+											<{includeq file="$theme_tpls/xo_block_center_c.html" block=$block}>
+											<div class="clear" style="height: 9px;"></div>
+										<{/foreach}>
 									</div>
 								</div>
-							</div>
-						</td>
-					 	<{if count($xoBlocks.canvas_right) != 0}> 
-						<td style="padding-left: 9px; vertical-align: top;">
-							<div id="right_column">
-								<div id="content_bg" style="">
-					        	<{if $xoops_showrblock}>
-					            	<div id="rightcolumn">
-					            	<{foreach item=block from=$xoBlocks.canvas_right}>
-					               		<{includeq file="$theme_tpls/xo_block_right.html"}>
-					               		<div class="clear"></div>
-					            	<{/foreach}>
-					            	</div>
-					       		 <{/if}>
-					        	<!-- End right blocks loop -->
-								<div class="clear"></div>
+								<div class="clear" style="height: 9px;"></div>
+								<div align="justify" valign="top" style="padding-left: 9px; vertical-align: top; padding: 7px !important;" class="<{if count($xoops_lblocks) && count($xoops_rblocks) }>center_column_both<{elseif count($xoops_lblocks) && !count($xoops_rblocks)}>center_column_left<{elseif !count($xoops_lblocks) && count($xoops_rblocks)}>center_column_right<{elseif !count($xoops_lblocks) && !count($xoops_rblocks)}>center_column<{/if}>" >
+								    <!-- BEGINS MODULE CONTENT -->
+							    	<div class="content_bg">
+							    		<{$xoops_contents}>
+							    	</div>
+									<!-- FINISH MODULE CONTENT -->
 								</div>
-							</div>
-						</td>
-					<{/if}>
-				</tr>
-				<{includeq file="$theme_tpls/xo_footer.html"}>
-			</table>
-       	</div>
-    </div>
+								<div class="clear" style="height: 13px;"></div>
+								
+							</td>
+							<{if count($xoops_rblocks) != 0}> 
+							<td rowspan="3"  align="justify" valign="top" style="padding-left: 9px; vertical-align: top;"  id="right_column">
+				            	<div id="rightcolumn">
+				            	<{foreach item=block from=$xoops_rblocks}>
+				               		<{includeq file="$theme_tpls/xo_block_right.html"}>
+				               		<div class="clear" style="height: 9px;"></div>
+				            	<{/foreach}>
+				            	</div>
+				        	<!-- End right blocks loop -->
+							</td>
+							<{/if}>
+						</tr>
+					</table>
+					<div class="clear" style="height: 9px;"></div>
+					<{includeq file="$theme_tpls/xo_footer.html"}>
+				</div>
+       		</div>
+    	</div>
 	<div class="clear" style="height: 55px;"></div>
 <{if $show_mission}>
 	<div id="blocker">

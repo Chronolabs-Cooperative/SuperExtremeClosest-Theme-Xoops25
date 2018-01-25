@@ -58,7 +58,7 @@ img{
 }
 
 a{
-    color: #ae65fe;
+    color: #000;
     text-decoration: none;
     font-weight: 500;
 }
@@ -66,7 +66,7 @@ a{
 a:hover {
     text-decoration: none;
     font-weight: bold;
-    color: #c70000;
+    color: #efefef;
     letter-spacing: -2px;
 }
 
@@ -223,6 +223,9 @@ input, select, checkbox, radio, textarea, blockquote, button, iframe {
     border-radius: 5px;
     border: 2px solid #0ee111;
     box-shadow: 2px 3px 3px #0ee111;
+    min-width: auto;
+    width: auto;
+    max-width: 60%;
 }
 
 
@@ -262,7 +265,7 @@ blockquote, textarea
 	margin-bottom: 4px;
 	margin-left: 9% !important;
 	margin-right: 9% !important;
-	width: 81% !important;
+	width: 51% !important;
 	border: 3px dash rgb(11, 11 11) !important;
 	text-shadow: 2px 4px 3px #786e99 !important;
 	box-shadow: 6px 4px 9px #0ee111 !important;

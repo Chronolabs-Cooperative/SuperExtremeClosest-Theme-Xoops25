@@ -20,11 +20,16 @@
 
 
 #left_column {
-	min-width: 682px;
-	width: 100%;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=269)";
+    filter: alpha(opacity=269);
+    -moz-opacity: 2.69;
+    -khtml-opacity: 2.69;
+    opacity: 2.69;
+	min-width: 242px;
 	float: left;
+	position: relative;
 	box-shadow: 6px 6px 3px #8e14fa;
-	border: 14px solid #87ae87;
+	border: 8px solid #87ae87;
 	border-radius: 18px;
 	padding: 0px;
 	display: inline-block;

@@ -21,6 +21,7 @@
 @import url(elements.css);
 @import url(rightcolumn.css);
 @import url(leftcolumn.css);
+@import url(centercolumn.css);
 @import url(contents.css);
 @import url(highlights.css);
 @import url(blocks.css);
@@ -38,6 +39,7 @@
 }
 .header2, #header2 {
 	min-height: 77px !important;
+	min-width: 1097px !important;
 }
 
 .clear{
@@ -50,15 +52,22 @@
 }
 
 #wrap{
-	width: 1016px;
+	width: 1455px;
 	margin: 0 auto;
-	padding: 9px 0px 0px 0px;
+	padding: 9px 0px 0px 0px;+
+	min-height: 1350px !important;
 }
 
 #wrap_bg{
-	width: 1216px;
+	width: 100% !important;
 	margin: 0 auto;
 	background: url(../images/logo_bg.png) no-repeat left top;
+	min-height: 1350px !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=69)";
+    filter: alpha(opacity=69);
+    -moz-opacity: 0.69;
+    -khtml-opacity: 0.69;
+    opacity: 0.69;
 }
 
 #logo {

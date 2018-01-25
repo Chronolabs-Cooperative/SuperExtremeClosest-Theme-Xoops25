@@ -21,7 +21,7 @@
 	
 	esctheme_init();
 	
-	define('ESCTHEME_ICON_FOLDER', esctheme_icon_folder());
+	define('ESCTHEME_ICON_FOLDER', 'chronolabscoop/quantum');
 	define('ESCTHEME_SLIDER_SUPPORTED', false);
 	
 	// Modal Popup
